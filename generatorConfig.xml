@@ -41,7 +41,6 @@
 			targetProject : プロジェクトディレクトリから生成先パッケージの親ディレクトリまでのパス
 			(公式リファレンス )http://mybatis.github.io/generator/configreference/javaModelGenerator.html
 		-->
-		<!-- http://mybatis.github.io/generator/configreference/javaModelGenerator.html -->
 		<javaModelGenerator targetPackage="sample.app.domain.model" targetProject="src/main/java" />
 
 		<!-- 
@@ -74,7 +73,7 @@
 
 		<!-- 
 			動生成対処のテーブル設定
-	    	自動生成対象のテーブル名を[tableName]に指定する (※テーブル名の指定はワイルドカードが利用できます)
+			自動生成対象のテーブル名を[tableName]に指定する (※テーブル名の指定はワイルドカードが利用できます)
 			(公式リファレンス )http://mybatis.github.io/generator/configreference/table.html
 	    	 
 			modelType :
@@ -86,7 +85,6 @@
 		-->
 		<table tableName="users" domainObjectName="User" />
 		<table tableName="password_changelogs" domainObjectName="PasswordChangelog" />
-
 
 		<!-- 全テーブルを対象とする場合 
 		<table schema="public" 
