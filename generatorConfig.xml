@@ -32,7 +32,7 @@
 
 		<!-- PostgreSQLのJDBCドライバ設定 -->
 		<jdbcConnection driverClass="org.postgresql.Driver" 
-			connectionURL="jdbc:postgresql://192.168.56.101:5432/sample" userId="postgres" password="postgres" />
+			connectionURL="jdbc:postgresql://192.168.56.101:5432/note" userId="postgres" password="postgres" />
 
 		<!-- 
 			Java Modelクラス(Entityクラス)

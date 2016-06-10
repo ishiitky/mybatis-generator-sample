@@ -13,7 +13,7 @@ PostgreSQL のJDBCドライバは pom で設定済み.
 接続先情報はそれぞれのシステムごとに変更すること.
 ```
 <jdbcConnection driverClass="org.postgresql.Driver" 
-	connectionURL="jdbc:postgresql://192.168.56.101:5432/sample" userId="postgres" password="postgres" />
+	connectionURL="jdbc:postgresql://192.168.56.101:5432/note" userId="postgres" password="postgres" />
 ```
 
 Entityクラスの出力先を設定する.  
@@ -35,7 +35,8 @@ targetPackage はそれぞれのシステムごとに変更すること.
 ```
 
 ターゲットとするテーブルを選択する.  
-本例ではテーブル名は複数形.ただしEntityクラス,SQL Mapperファイル,DAOクラスは単数形にしたいため、domainObjectName を指定している.  
+本例ではテーブル名は複数形.  
+ただしEntityクラス,SQL Mapperファイル,DAOクラスは単数形にしたいため、domainObjectName を指定している.  
 domainObjectName を指定しない場合はテーブル名と同じクラス、XMLファイルが生成される.
 ```
 <table tableName="users" domainObjectName="User" />
